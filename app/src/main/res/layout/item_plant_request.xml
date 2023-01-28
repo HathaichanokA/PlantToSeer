@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2"
+        android:id="@+id/item">
+
+
+        <LinearLayout
+            android:layout_width="347dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:id="@+id/tv_title_plant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:text="test"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_image_recycle_item"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Test" />
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:id="@+id/tv_desc_plant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="test"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_image_recycle_item"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_plant"
+                tools:text="Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test " />
+
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Waiting Admin Approve"
+                android:textColor="#B5B3B3"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_image_recycle_item" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

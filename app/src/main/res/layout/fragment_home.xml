@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:padding="10dp"
+    android:background="@drawable/mainbg">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/profile_list_icon"
+                        android:src="@drawable/icon_list"/>
+
+                    <TextView
+                        android:id="@+id/home_popup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/font_family"
+                        android:gravity="center_vertical"
+                        android:textSize="23dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="50dp">
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:id="@+id/home_profile_picture"
+                        android:src="@drawable/logo"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:alpha="0.8"
+                android:padding="15dp"
+                android:background="@drawable/rounded_all_border_linearlayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/font_family"
+                    android:text="@string/home_fragment_topic"/>
+
+                <!--    vegetable    -->
+                <LinearLayout
+                    android:id="@+id/home_linear_vegetable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font_family"
+                        android:text="@string/home_fragment_vegetable"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/home_vegetable_recycle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+                <!--    fruit    -->
+                <LinearLayout
+                    android:id="@+id/home_linear_fruit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font_family"
+                        android:text="@string/home_fragment_fruit"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/home_fruit_recycle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+                <!--    fruit    -->
+                <LinearLayout
+                    android:id="@+id/home_linear_herb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font_family"
+                        android:text="@string/home_fragment_herb"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/home_herb_recycle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+</ScrollView>
